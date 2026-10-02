@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webiposas | El Santuario y Crianza de Mariposas</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <style>
+    :root {
+      --primary-color: #2e7d32;
+      --accent-color: #ff9800;
+      --bg-light: #f4f9f4;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    .bg-custom-primary {
+      background-color: var(--primary-color) !important;
+    }
+
+    .text-custom-primary {
+      color: var(--primary-color) !important;
+    }
+
+    .btn-custom {
+      background-color: var(--accent-color);
+      color: #ffffff;
+      border: none;
+      font-weight: 600;
+    }
+
+    .btn-custom:hover {
+      background-color: #e68a00;
+      color: #ffffff;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, rgba(46, 125, 50, 0.08) 0%, rgba(255, 152, 0, 0.08) 100%);
+      padding: 80px 0;
+    }
+
+    .card-img-top, .carousel-item img {
+      object-fit: cover;
+      height: 260px;
+      border-top-left-radius: 0.375rem;
+      border-top-right-radius: 0.375rem;
+    }
+
+    .carousel-item img {
+      height: 420px;
+      border-radius: 0.5rem;
+    }
+
+    footer a {
+      color: #d1d1d1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom-primary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold fs-4" href="#">
+        <i class="bi bi-butterfly fs-3 text-warning"></i> Webiposas
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWebiposas" aria-controls="navbarWebiposas" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarWebiposas">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#informacion">Cuidados e Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">Preguntas Frecuentes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. PORTADA / HERO -->
+  <header id="inicio" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <span class="badge bg-success mb-2 px-3 py-2 rounded-pill fs-6">Especialistas en Lepidópteros</span>
+          <h1 class="display-4 fw-bold text-dark mb-3">El arte de criar y proteger a las mariposas</h1>
+          <p class="lead text-muted mb-4">Aprende sobre su ciclo de vida, requerimientos nutricionales y encuentra las herramientas especializadas para su crianza segura y rescate.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <button type="button" class="btn btn-custom btn-lg px-4 shadow-sm" data-bs-toggle="modal" data-bs-target="#promoModal">
+              <i class="bi bi-tag-fill me-2"></i> Ver Promoción Especial
+            </button>
+            <a href="#productos" class="btn btn-outline-success btn-lg px-4">Ver Catálogo</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?auto=format&fit=crop&w=900&q=80" alt="Mariposa Monarca" class="img-fluid rounded-4 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN INFORMACIÓN Y CUIDADOS -->
+  <section id="informacion" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-custom-primary">Guía de Cuidado de Mariposas</h2>
+        <p class="text-muted">Aprende los pilares fundamentales para criar mariposas de forma ética y saludable.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mariposa en flor">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="bi bi-flower1 text-success me-2"></i> Alimentación y Néctar</h5>
+              <p class="card-text">Las mariposas adultas requieren flores ricas en néctar como Lantanas, Zinnia y Asclepias. Para mariposas en cautiverio, se puede complementar con soluciones nectárigas al 10% de azúcar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1535083783855-76ae62b2914e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Oruga">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="bi bi-bug text-warning me-2"></i> Plantas Hospederas</h5>
+              <p class="card-text">Cada especie deposita sus huevos solo en plantas específicas. Las orugas de la Monarca consumen únicamente algodoncillo (Asclepias), alimento vital para su metamorfosis.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1470058869958-2a77ade41c02?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Hábitat de mariposas">
+            <div class="card-body">
+              <h5 class="card-title fw-bold"><i class="bi bi-sun text-danger me-2"></i> Clima y Hábitat</h5>
+              <p class="card-text">Las mariposas necesitan temperaturas cálidas (20°C a 28°C) e iluminación solar indirecta para activar sus músculos de vuelo y poder alimentarse con normalidad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CARRUSEL DE PRODUCTOS -->
+  <section id="productos" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-custom-primary">Nuestros Productos para Criadores</h2>
+        <p class="text-muted">Insumos de calidad profesional para la crianza, rehabilitación y observación de lepidópteros.</p>
+      </div>
+
+      <div id="carruselProductos" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carruselProductos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carruselProductos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carruselProductos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <!-- Producto 1: Semillas -->
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Semillas para jardín de mariposas">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded-3">
+              <h5><i class="bi bi-journal-sprout"></i> Semillas de Flores Nectaríferas y Hospederas</h5>
+              <p>Mezcla especial de Asclepias, Lavanda y Zinnias para atraer y alimentar a mariposas en todas sus etapas.</p>
+            </div>
+          </div>
+
+          <!-- Producto 2: Prótesis de alas -->
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Prótesis y kits de injerto de alas">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded-3">
+              <h5><i class="bi bi-scissors"></i> Kits de Prótesis e Injertos de Alas</h5>
+              <p>Herramientas, membranas ultraligeras y adhesivo entomológico para la reparación y rehabilitación de alas dañadas.</p>
+            </div>
+          </div>
+
+          <!-- Producto 3: Linternas UV -->
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80" class="d-block w-100" alt="Linternas para observación nocturna">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 p-3 rounded-3">
+              <h5><i class="bi bi-lightbulb"></i> Linternas UV y Trampas de Luz Nocturna</h5>
+              <p>Luz ultravioleta calibrada para el monitoreo y avistamiento no invasivo de polillas y mariposas nocturnas.</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselProductos" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselProductos" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. PREGUNTAS FRECUENTES (FAQ - ACCORDION) -->
+  <section id="faq" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-custom-primary">Preguntas Frecuentes</h2>
+        <p class="text-muted">Resolvemos tus dudas sobre la crianza y nuestros productos.</p>
+      </div>
+
+      <div class="accordion shadow-sm" id="accordionFAQ">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ¿En qué consisten las prótesis de alas para mariposas?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              Las prótesis de alas consisten en injertos de alas de mariposas que fallecieron por causas naturales o membranas sintéticas livianas. Se colocan utilizando pegamento quirúrgico libre de tóxicos para devolverles la capacidad de volar.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Las semillas que venden sirven para cualquier tipo de mariposa?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              Contamos con mezclas generales de plantas ricas en néctar para adultos de diversas especies, así como semillas específicas de plantas hospederas como *Asclepias curassavica* para mariposas Monarca y Pasifloras para mariposas Espejitos.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Por qué utilizar linternas UV para mariposas nocturnas?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">
+              La longitud de onda de las linternas de luz ultravioleta (365nm) permite la observación y fotografía nocturna de mariposas sin encandilarlas ni alterar de forma dañina sus patrones naturales de navegación.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CONTACTO -->
+  <section id="contacto" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow border-0 p-4">
+            <div class="card-body">
+              <h2 class="card-title text-center fw-bold text-custom-primary mb-4">Ponte en Contacto</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label fw-semibold">Nombre Completo</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ej. María García" required>
+                </div>
+                <div class="mb-3">
+                  <label for="correo" class="form-label fw-semibold">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label fw-semibold">Mensaje o Consulta</label>
+                  <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje sobre crianza o productos..." required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-custom btn-lg px-5">
+                    <i class="bi bi-send-fill me-2"></i> Enviar Mensaje
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. MODAL PROMOCIONAL -->
+  <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-custom-primary text-white">
+          <h5 class="modal-title fw-bold" id="promoModalLabel"><i class="bi bi-gift-fill me-2"></i> ¡Kit de Inicio de Crianza!</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-4">
+          <i class="bi bi-stars text-warning display-3 mb-3 d-block"></i>
+          <h4>Obtén un 20% de descuento</h4>
+          <p class="text-muted">En tu primer pedido de semillas de flores hospederas y kit de mantenimiento de orugas al suscribirte a nuestro boletín.</p>
+          <span class="badge bg-danger fs-6 mb-3">Código: WEBIPOSAS2026</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <a href="#contacto" class="btn btn-custom" data-bs-dismiss="modal">Aprovechar Oferta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. FOOTER -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Info breve -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold text-warning mb-3"><i class="bi bi-butterfly"></i> Webiposas</h5>
+          <p class="text-secondary">Plataforma dedicada a la divulgación, conservación y provisión de herramientas especializadas para criadores y entusiastas de mariposas.</p>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Ubicación</h5>
+          <p class="text-secondary mb-1"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Av. Primavera 1234, Ciudad Botánica</p>
+          <p class="text-secondary mb-1"><i class="bi bi-telephone-fill text-warning me-2"></i> +51 987 654 321</p>
+          <p class="text-secondary"><i class="bi bi-envelope-fill text-warning me-2"></i> contacto@webiposas.org</p>
+        </div>
+
+        <!-- Enlaces internos -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3">Enlaces</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#inicio">Inicio</a></li>
+            <li class="mb-2"><a href="#informacion">Cuidados</a></li>
+            <li class="mb-2"><a href="#productos">Productos</a></li>
+            <li class="mb-2"><a href="#faq">FAQ</a></li>
+            <li class="mb-2"><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Síguenos</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-light rounded-circle"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn btn-outline-light rounded-circle"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn btn-outline-light rounded-circle"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="btn btn-outline-light rounded-circle"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4 border-secondary">
+
+      <div class="text-center text-secondary">
+        <small>&copy; 2026 Webiposas. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
